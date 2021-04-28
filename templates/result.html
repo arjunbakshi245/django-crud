@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result</title>
+</head>
+
+<body>
+    <h1>{{msg}}</h1>
+    {% if obj %}
+    <h3>Name: {{obj.name}}</h3>
+    <h3>Adress: {{obj.address}}</h3>
+    <h3>Age: {{obj.age}}</h3>
+    <h3>Date of Birth: {{obj.dob}}</h3>
+    <img src="{{obj.pic.url}}" alt="" width="500" />
+    <h3>Gender : {{obj.gender}}</h3>
+    <h3>Group : {{obj.group}}</h3>
+    {% if obj.total %}
+    <h3>He is a regulat Patient</h3>
+    {% else %}
+    <h3>He is not a regular Patient</h3>
+    {% endif %}
+    <h3>Cost: Rs {{obj.amount}}</h3>
+    {% endif %} {% if obj.Dentist %}
+    <h3>Visited: Dentist</h3>
+    {% endif %} {% if obj.Opthalmologist %}
+    <h3>Visited: Opthalmologist</h3>
+    {% endif %} {% if obj.Orthopaedic %}
+    <h3>Visited: Orthopaedic</h3>
+    {% endif %}
+</body>
+
+</html>

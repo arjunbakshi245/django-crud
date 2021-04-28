@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script>
+    <!-- <script>
         const checkboxes = document.querySelectorAll(
             'input[name="vehicles"]:checked'
         );
@@ -15,7 +15,7 @@
             var image = document.getElementById("output");
             image.src = URL.createObjectURL(event.target.files[0]);
         };
-    </script>
+    </script> -->
     <title>Form</title>
 </head>
 
@@ -33,7 +33,17 @@
             <pre>Name  <input type="text" name="t2" /><br /><br /></pre>
         </div>
         <hr />
+        <div>
+            <p>Please select your gender:</p>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label><br />
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label><br />
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other</label>
+            <br /><br />
 
+        </div>
         <div style="display: flex; align-items: center; height: 100%">
             <pre>Address
 
@@ -45,30 +55,7 @@
             <pre>Age   <input type="number" name="t4" /><br />
         </pre>
         </div>
-        <hr />
 
-        <!-- Radio button -->
-        <div>Date of Birth: <input type="date" name="dob" id="dob" /></div>
-        <br />
-        <hr />
-
-        <div>
-            <p>Please select your gender:</p>
-            <input type="radio" id="male" name="gender" value="male" />
-            <label for="male">Male</label><br />
-            <input type="radio" id="female" name="gender" value="female" />
-            <label for="female">Female</label><br />
-            <input type="radio" id="other" name="gender" value="other" />
-            <label for="other">Other</label>
-            <br /><br />
-            <hr />
-        </div>
-        <div>
-            Total cost amount(Rs):
-            <input type="number" step="any" name="amount" id="" />
-        </div>
-        <br />
-        <hr />
         <div>
             <p>Number of previous Visits:</p>
             <input type="radio" id="less" name="visits" value="False" />
@@ -76,6 +63,19 @@
             <input type="radio" id="less" name="visits" value="True" />
             <label for="lesser">3 Or More</label><br />
         </div>
+        <br />
+        <div>Date of Birth: <input type="date" name="dob" id="dob" /></div>
+        <br />
+
+
+
+        <div>
+            Total cost amount(Rs):
+            <input type="number" step="any" name="amount" id="" />
+        </div>
+        <br />
+        <hr />
+
         <br />
         <hr />
 
